@@ -1,0 +1,37 @@
+// Caterers Collection
+{
+  "_id": ObjectId("caterer_id_1"),
+  "name": "Caterer Name",
+  "email": "caterer@example.com",
+  "password": "hashed_password"
+}
+
+// Restaurants Collection
+{
+  "_id": ObjectId("restaurant_id_1"),
+  "name": "Restaurant Name",
+  "description": "Description of the restaurant",
+  "caterer_id": ObjectId("caterer_id_1")
+}
+
+// Menu Categories Collection
+{
+  "_id": ObjectId("category_id_1"),
+  "name": "Appetizers",
+  "description": "Description of appetizers"
+},
+{
+    "_id": ObjectId("category_id_2"),
+    "name": "Breakfast",
+    "description": "Description of appetizers"
+  }
+
+// Menus Collection
+{
+  "_id": ObjectId("menu_id_1"),
+  "name": "pasta",
+  "description": "Description of the menu item",
+  "price": 10.99,
+  "category_id": ObjectId("category_id_1"),
+  "restaurant_id": ObjectId("restaurant_id_1")
+}
